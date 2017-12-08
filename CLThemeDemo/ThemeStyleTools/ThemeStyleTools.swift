@@ -194,6 +194,11 @@ extension ThemeStyleTools {
 }
 
 extension ThemeStyleTools {
+    
+    public static func currentThemeColor() -> String {
+        return Project_Theme
+    }
+    
     public static func enable(defaultTheme: String) {
         // 皮肤相关
         let theme = UserDefaults.standard.value(forKey: currentThemeKey)

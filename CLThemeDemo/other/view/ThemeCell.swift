@@ -22,18 +22,14 @@ class ThemeCell: UICollectionViewCell {
             self.bgView.backgroundColor = UIColor(hexString: mainColor ?? "")
             
             // 当前使用的主题
-            let theme = CLUserDefaults.value(forKey: currentThemeKey)
-            if theme != nil {
-                let colorStr = theme as! String
-                if colorStr == (mainColor ?? "") {
-                    self.userBtn.setTitle("使用中", for: .normal)
-                    self.userBtn.isUserInteractionEnabled = false
-                } else {
-                    self.userBtn.setTitle("去使用", for: .normal)
-                    self.userBtn.isUserInteractionEnabled = true
-                }
-                self.userBtn.backgroundColor = UIColor(hexString: colorStr)
+            if ThemeStyleTools.currentThemeColor() == (mainColor ?? "") {
+                self.userBtn.setTitle("使用中", for: .normal)
+                self.userBtn.isUserInteractionEnabled = false
+            } else {
+                self.userBtn.setTitle("去使用", for: .normal)
+                self.userBtn.isUserInteractionEnabled = true
             }
+            self.userBtn.backgroundColor = UIColor(hexString: ThemeStyleTools.currentThemeColor())
         }
     }
 
