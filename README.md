@@ -77,3 +77,9 @@
                 self.leftBtn.setImage(img, for: .normal)
             }
         }).addDisposableTo(disposeBag)
+
+
+5.该库依赖于rxswift ,截止目前RxSwift暂未更新到swift4.0，如果发现你的项目引入rxswift后报错，注意检查rxswift的编译版本
+buildsettings(搜索swift language version) 将编译版本改为swift3.2，当然，如果以后支持了swift4.0，就可以忽略这一步了
+
+![(logo)](http://images2017.cnblogs.com/blog/818253/201712/818253-20171208140047593-1277633841.png)
