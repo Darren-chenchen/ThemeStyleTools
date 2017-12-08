@@ -24,7 +24,7 @@ extension ThemeStyleTools {
             let color = UIColor(hexString: Project_Theme)
             view.backgroundColor = color
             
-        }).addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
     }
 }
 
@@ -37,7 +37,7 @@ extension ThemeStyleTools {
             Project_Theme = colorStr
             let color = UIColor(hexString: Project_Theme)
             label.textColor = color
-        }).addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
     }
     
     // 副标题的颜色
@@ -47,7 +47,7 @@ extension ThemeStyleTools {
             Project_Theme = colorStr
             let color = UIColor(hexString: Project_Theme)
             label.textColor = color
-        }).addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
     }
 }
 //MARK: - UIButton
@@ -59,7 +59,7 @@ extension ThemeStyleTools {
             Project_Theme = colorStr
             let color = UIColor(hexString: Project_Theme)
             btn.setTitleColor(color, for: .normal)
-        }).addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
     }
     //UIButton文字颜色selected
     public static func cl_setupBtnSelectedTextColor(btn: UIButton) {
@@ -69,7 +69,7 @@ extension ThemeStyleTools {
             let color = UIColor(hexString: Project_Theme)
             
             btn.setTitleColor(color, for: .selected)
-        }).addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
     }
     
     //UIButton图片颜色normalnormal
@@ -82,7 +82,7 @@ extension ThemeStyleTools {
             btn.tintColor = color
             let img = btn.image(for: .normal)?.withRenderingMode(.alwaysTemplate)
             btn.setImage(img, for: .normal)
-        }).addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
     }
     //UIButton图片颜色select
     public static func cl_setupBtnSelectImgColor(btn: UIButton) {
@@ -93,7 +93,7 @@ extension ThemeStyleTools {
             btn.tintColor = color
             let img = btn.image(for: .selected)?.withRenderingMode(.alwaysTemplate)
             btn.setImage(img, for: .selected)
-        }).addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
     }
 }
 //MARK: - UIImageView
@@ -107,7 +107,7 @@ extension ThemeStyleTools {
             let image = img.image?.withRenderingMode(.alwaysTemplate)
             img.tintColor = color
             img.image = image
-        }).addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
     }
 }
 //MARK: - UISlider
@@ -120,7 +120,7 @@ extension ThemeStyleTools {
             let color = UIColor(hexString: Project_Theme)
             
             slider.tintColor = color
-        }).addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
     }
 }
 //MARK: - UIPageControl
@@ -134,7 +134,7 @@ extension ThemeStyleTools {
             
             page.currentPageIndicatorTintColor = color
             
-        }).addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
     }
 }
 
@@ -148,7 +148,7 @@ extension ThemeStyleTools {
             
             progress.tintColor = color
             
-        }).addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
     }
 }
 //MARK: - UISwitch
@@ -161,7 +161,7 @@ extension ThemeStyleTools {
             
             switchView.onTintColor = color
             
-        }).addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
     }
 }
 
@@ -176,7 +176,7 @@ extension ThemeStyleTools {
             textField.textColor = color
             textField.layoutSubviews()
             
-        }).addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
     }
 }
 //MARK: - UISegmentedControl
@@ -189,7 +189,7 @@ extension ThemeStyleTools {
             
             segment.tintColor = color
             
-        }).addDisposableTo(disposeBag)
+        }).disposed(by: disposeBag)
     }
 }
 
