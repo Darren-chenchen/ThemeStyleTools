@@ -98,7 +98,7 @@ extension ThemeStyleTools {
 }
 //MARK: - UIImageView
 extension ThemeStyleTools {
-    //UISlider颜色
+    //UIImageView图片颜色
     public static func cl_setupImageViewColor(img: UIImageView) {
         ListeningThemeAdjuster.listeningTheme.asObservable().subscribe(onNext: { (colorStr:String) in
             
@@ -123,6 +123,20 @@ extension ThemeStyleTools {
         }).disposed(by: disposeBag)
     }
 }
+//MARK: - UITextView
+extension ThemeStyleTools {
+    //UITextView文字颜色
+    public static func cl_setupTextViewColor(textView: UITextView) {
+        ListeningThemeAdjuster.listeningTheme.asObservable().subscribe(onNext: { (colorStr:String) in
+            
+            Project_Theme = colorStr
+            let color = UIColor(hexString: Project_Theme)
+            
+            textView.textColor = color
+        }).disposed(by: disposeBag)
+    }
+}
+
 //MARK: - UIPageControl
 extension ThemeStyleTools {
     //UISlider颜色

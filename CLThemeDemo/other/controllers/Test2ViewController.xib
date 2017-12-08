@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Test2ViewController" customModule="CLThemeDemo" customModuleProvider="target">
             <connections>
                 <outlet property="imgView" destination="hgN-VA-kSK" id="NGe-is-kzE"/>
+                <outlet property="textView" destination="pF1-Sz-hJa" id="k0o-bz-rY4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,6 +34,13 @@
                         <constraint firstAttribute="width" constant="84" id="EfG-E5-T9N"/>
                     </constraints>
                 </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="textView" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pF1-Sz-hJa">
+                    <rect key="frame" x="75" y="248" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>

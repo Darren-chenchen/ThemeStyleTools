@@ -10,12 +10,13 @@ import UIKit
 
 class Test2ViewController: BaseViewController {
 
+    @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var imgView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         ThemeStyleTools.cl_setupImageViewColor(img: self.imgView)
-        
+        ThemeStyleTools.cl_setupTextViewColor(textView: self.textView)
     }
 
 }
