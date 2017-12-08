@@ -1,18 +1,37 @@
+#
+# Be sure to run `pod lib lint UralFramework.podspec' to ensure this is a
+# valid spec before submitting.
+#
+# Any lines starting with a # are optional, but their use is encouraged
+# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
+#
+
 Pod::Spec.new do |s|
-  s.name = 'ThemeStyleTools'
-  s.version = '1.0.0'
-  s.license = 'MIT'
-  s.summary = 'This is a theme demo'
-  s.homepage = 'https://github.com/Darren-chenchen/ThemeStyleTools'
+  s.name             = 'ThemeStyleTools'
+  s.version          = '1.0.1'
+  s.summary          = 'theme library.'
+
+# This description is used to generate tags and improve search results.
+#   * Think: What does it do? Why did you write it? What is the focus?
+#   * Try to keep it short, snappy and to the point.
+#   * Write the description between the DESC delimiters below.
+#   * Finally, don't worry about the indent, CocoaPods strips it!
+
+
+  s.homepage         = 'https://github.com/Darren-chenchen/ThemeStyleTools.git'
+  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.authors = { 'Darren-chenchen' => '1597887620@qq.com' }
-  s.source = { :git => 'https://github.com/Darren-chenchen/ThemeStyleTools.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Darren-chenchen/ThemeStyleTools.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'CLThemeDemo/ThemeStyleTools/**/*.swift'
-  s.resource_bundles = { 
-	'CLImagePickerTool' => []
-  s.dependency 'RxSwift', '~> 3.0'
-  s.dependency 'RxCocoa', '~> 3.0'
+  s.resource_bundles = {
+    'ThemeStyleTools' => ['CLThemeDemo/ThemeStyleTools/*.png']
   }
+
+    s.dependency 'RxSwift'
+    s.dependency 'RxCocoa'
 end
