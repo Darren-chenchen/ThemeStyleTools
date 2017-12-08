@@ -33,5 +33,4 @@ func XFViewsBorder(_ view:UIView, borderWidth:CGFloat, borderColor:UIColor?=nil,
 }
 
 let win = UIApplication.shared.keyWindow
-let CLNotificationCenter = NotificationCenter.default
-let CLUserDefaults = UserDefaults.standard
+

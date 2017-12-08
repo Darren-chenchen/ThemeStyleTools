@@ -12,3 +12,6 @@ var Project_Theme = ""
 
 // 当前使用的主题色
 let currentThemeKey = "currentTheme"
+
+let CLNotificationCenter = NotificationCenter.default
+let CLUserDefaults = UserDefaults.standard
